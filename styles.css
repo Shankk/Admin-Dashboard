@@ -8,5 +8,68 @@
 body{
     margin: 0px;
     padding: 0px;
-    display: block;
+    
+}
+
+.page {
+    display: grid;
+    grid-template-columns: 300px 1200px;
+    grid-template-rows: 200px 200px 200px 200px;
+}
+
+.header{
+    background-color: white;
+    box-shadow: 0px 2px 4px 2px grey;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    padding-top: 20px;
+    gap: 10px;
+}
+
+.search-input {
+    width: 600px;
+    height: 30px;
+    border-radius: 16px;
+    padding: 5px;
+    background-color: lightgrey;
+}
+
+.left-content {
+    font-size: 32px;
+    background-color: lightseagreen;
+    grid-column: 1/2;
+    grid-row: 1/5;
+}
+
+.title {
+    font-size: 32px;
+    padding: 15px;
+    
+}
+
+.primary , .secondary {
+    font-size: 24px;
+    padding: 15px;
+    
+}
+
+.main-content {
+    background-color: rgba(128, 128, 128, 0.164);
+    grid-row: 2/5;
+}
+
+
+
+ul {
+    list-style-type: none;
+}
+
+li , .title{
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
